@@ -17,7 +17,7 @@ from collections import OrderedDict
 import multiprocessing
 import numpy as np
 import tensorflow as tf
-import tensorflow.keras
+import keras
 import tensorflow.python.keras.backend as K
 import tensorflow.python.keras.layers as KL
 import tensorflow.python.keras.engine as KE
