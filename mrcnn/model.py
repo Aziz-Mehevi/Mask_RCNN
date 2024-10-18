@@ -19,7 +19,7 @@ import numpy as np
 import tensorflow as tf
 import keras
 import tensorflow.python.keras.backend as K
-import tensorflow.python.keras.layers as KL
+from tensorflow.python.keras.layers import BatchNormalization 
 import tensorflow.python.keras.engine as KE
 import tensorflow.python.keras.models as KM
 
@@ -50,7 +50,7 @@ def log(text, array=None):
     print(text)
 
 
-class BatchNorm(KL.BatchNormalization):
+class BatchNorm(BatchNormalization):
     """Extends the Keras BatchNormalization class to allow a central place
     to make changes if needed.
 
